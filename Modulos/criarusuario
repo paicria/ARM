@@ -1,6 +1,6 @@
 #!/bin/bash
 #====================================================
-#	@kiritosshxd
+#	@ogeniohacker 
 #====================================================
 IP=$(cat /etc/IP)
 cor1='\033[41;1;37m'
@@ -251,20 +251,19 @@ fun_edithost() {
     fi
 }
 [[ ! -e /usr/lib/sshplus ]] && exit 0
-tput setaf 7;tput setab 4;tput bold;printf '%30s%s%-15s\n' "Criar Usuário SSH";tput sgr0
-echo ""
-echo -ne "\033[1;32mNome do usuário:\033[1;37m ";read username
+tput setaf 7;tput setab 4;tput bold;printf '%30s%s%-15s\n' "CRIAR USUÁRIO SSH";tput sgr0
+#echo -ne "\033[1;32m📝 NOME:\033[1;37m ";read namee
+#[[ -z $namee ]] && {
+#	echo -e "\n${cor1}Nome vazio ou invalido!${scor}\n"
+#	exit 1
+#}
+echo -ne "\033[1;32m🗣️ USUÁRIO:\033[1;37m ";read username
 [[ -z $username ]] && {
-	echo -e "\n${cor1}Nome de usuário vazio ou invalido!${scor}\n"
+	echo -e "\n${cor1}usuário vazio ou invalido!${scor}\n"
 	exit 1
 }
 [[ "$(grep -wc $username /etc/passwd)" != '0' ]] && {
 	echo -e "\n${cor1}Este usuário já existe. tente outro nome!${scor}\n"
-	exit 1
-}
-[[ ${username} != ?(+|-)+([a-zA-Z0-9]) ]] && {
-	echo -e "\n${cor1}Você digitou um nome de usuário inválido!${scor}"
-	echo -e "${cor1}Não use espaços, acentos ou caracteres especiais!${scor}\n"
 	exit 1
 }
 sizemin=$(echo ${#username})
@@ -274,12 +273,12 @@ sizemin=$(echo ${#username})
 	exit 1
 }
 sizemax=$(echo ${#username})
-[[ $sizemax -gt 10 ]] && {
+[[ $sizemax -gt 25 ]] && {
 	echo -e "\n${cor1}Você digitou um nome de usuário muito grande"
-	echo -e "${cor1}use no máximo 10 caracteres!${scor}\n"
+	echo -e "${cor1}use no máximo 25 caracteres!${scor}\n"
 	exit 1
 }
-echo -ne "\033[1;32mSenha:\033[1;37m ";read password
+echo -ne "\033[1;32m🔑 SENHA:\033[1;37m ";read password
 [[ -z $password ]] && {
 	echo -e "\n${cor1}Senha vazia ou invalida!${scor}\n"
 	exit 1
@@ -289,7 +288,7 @@ sizepass=$(echo ${#password})
 	echo -e "\n${cor1}Senha curta!, use no mínimo 4 caracteres${scor}\n"
 	exit 1
 }
-echo -ne "\033[1;32mDias para expirar:\033[1;37m ";read dias
+echo -ne "\033[1;32m⌛ DIAS PARA EXPIRA:\033[1;37m ";read dias
 [[ -z $dias ]] && {
 	echo -e "\n${cor1}Numero de dias vazio!${scor}\n"
 	exit 1
@@ -302,7 +301,7 @@ echo -ne "\033[1;32mDias para expirar:\033[1;37m ";read dias
 	echo -e "\n${cor1}O número deve ser maior que zero!${scor}\n"
 	exit 1
 }
-echo -ne "\033[1;32mLimite de conexões:\033[1;37m ";read sshlimiter
+echo -ne "\033[1;32m📲 LIMITE DE CONEXÕES:\033[1;37m ";read sshlimiter
 [[ -z $sshlimiter ]] && {
 	echo -e "\n${cor1}Você deixou o limite de conexões vazio!${scor}\n"
 	exit 1
@@ -315,10 +314,17 @@ echo -ne "\033[1;32mLimite de conexões:\033[1;37m ";read sshlimiter
 	echo -e "\n${cor1}Número de conexões simultâneas deve ser maior que zero!${scor}\n"
 	exit 1
 }
+echo -ne "\033[1;32m💲 VALOR:\033[1;37m ";read vl
+[[ -z $vl ]] && {
+	echo -e "\n${cor1}Valor vazio ou invalido!${scor}\n"
+	exit 1
+}
 final=$(date "+%Y-%m-%d" -d "+$dias days")
 gui=$(date "+%d/%m/%Y" -d "+$dias days")
 pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
 useradd -e $final -M -s /bin/false -p $pass $username >/dev/null 2>&1 &
+echo "$namee" >>/root/namee
+echo "$vl" >> /root/valor
 echo "$password" >/etc/SSHPlus/senha/$username
 echo "$username $sshlimiter" >>/root/usuarios.db
 [[ -e /etc/openvpn/server.conf ]] && {
@@ -340,12 +346,13 @@ echo "$username $sshlimiter" >>/root/usuarios.db
 			}
 		}
 		clear
-		echo -e "\E[44;1;37m       CONTA SSH CRIADA !      \E[0m"
-		echo -e "\n\033[1;32mIP: \033[1;37m$IP"
-		echo -e "\033[1;32mUsuário: \033[1;37m$username"
-		echo -e "\033[1;32mSenha: \033[1;37m$password"
-		echo -e "\033[1;32mExpira em: \033[1;37m$gui"
-		echo -e "\033[1;32mLimite de conexões: \033[1;37m$sshlimiter"
+		#echo -e "\033[1;32m 📝NOME: \033[1;37m$nomee"
+		echo -e "\E[44;1;37m======🦸DADOS DE ACESSO🦸‍♀️======\E[0m"
+		echo -e "\033[1;32m 🗣️USUARIO: \033[1;37m$username"
+		echo -e "\033[1;32m 🔑SENHA: \033[1;37m$password"
+		echo -e "\033[1;32m ⌛EXPIRA EM: \033[1;37m$gui"
+		echo -e "\033[1;32m 📲LIMITE DE CONEXÃO: \033[1;37m$sshlimiter"
+                echo -e "\033[1;32m 💲VALOR: \033[1;37m$vl"
 		sleep 1
 		function aguarde() {
 			helice() {
@@ -380,19 +387,23 @@ echo "$username $sshlimiter" >>/root/usuarios.db
 		}
 	} || {
 		clear
-		echo -e "\E[44;1;37m       CONTA SSH CRIADA !      \E[0m"
-		echo -e "\n\033[1;32mIP: \033[1;37m$IP"
-		echo -e "\033[1;32mUsuário: \033[1;37m$username"
-		echo -e "\033[1;32mSenha: \033[1;37m$password"
-		echo -e "\033[1;32mExpira em: \033[1;37m$gui"
-		echo -e "\033[1;32mLimite de conexões: \033[1;37m$sshlimiter"
+		#echo -e "\033[1;32m 📝NOME: \033[1;37m$nomee"
+		echo -e "\E[44;1;37m======🦸DADOS DE ACESSO🦸‍♀️======\E[0m"
+		echo -e "\033[1;32m 🗣️USUARIO: \033[1;37m$username"
+		echo -e "\033[1;32m 🔑SENHA: \033[1;37m$password"
+		echo -e "\033[1;32m ⌛EXPIRA EM: \033[1;37m$gui"
+		echo -e "\033[1;32m 📲LIMITE DE CONEXÃO: \033[1;37m$sshlimiter"
+                echo -e "\033[1;32m 💲VALOR: \033[1;37m$vl"
+echo -ne "\n\033[1;33mENTER \033[1;33mPARA VOLTAR AO \033[1;33mMENU!\033[0m"; read
 	}
 } || {
 	clear
-	echo -e "\E[44;1;37m       CONTA SSH CRIADA !      \E[0m"
-	echo -e "\n\033[1;32mIP: \033[1;37m$IP"
-	echo -e "\033[1;32mUsuário: \033[1;37m$username"
-	echo -e "\033[1;32mSenha: \033[1;37m$password"
-	echo -e "\033[1;32mExpira em: \033[1;37m$gui"
-	echo -e "\033[1;32mLimite de conexões: \033[1;37m$sshlimiter"
+		#echo -e "\033[1;32m 📝NOME: \033[1;37m$nomee"
+		echo -e "\E[44;1;37m======🦸DADOS DE ACESSO🦸‍♀️======\E[0m"
+		echo -e "\033[1;32m 🗣️USUARIO: \033[1;37m$username"
+		echo -e "\033[1;32m 🔑SENHA: \033[1;37m$password"
+		echo -e "\033[1;32m ⌛EXPIRA EM: \033[1;37m$gui"
+		echo -e "\033[1;32m 📲LIMITE DE CONEXÃO: \033[1;37m$sshlimiter"
+                echo -e "\033[1;32m 💲VALOR: \033[1;37m$vl"
+echo -ne "\n\033[1;33mENTER \033[1;33mPARA VOLTAR AO \033[1;33mMENU!\033[0m"; read
 }

@@ -6,6 +6,8 @@
 #	CANAL TELEGRAM:	http://t.me/sshplus
 #====================================================
 clear
+system=$(cat /etc/issue.net)
+date=$(date '+%d-%m-%Y HORÁRIO: %H:%M:%S')
 database="/root/usuarios.db"
 fun_multilogin() {
 	(
@@ -14,6 +16,9 @@ fun_multilogin() {
 			conssh="$(ps -u $user | grep sshd | wc -l)"
 			[[ "$conssh" -gt "$limit" ]] && {
 				pkill -u $user
+echo ULTRAPASSOU O LIMITE >> /root/banido
+echo NOME: $user DATA: $date >> /root/banido
+echo __________________________________ >> /root/banido		
 			}
 			[[ -e /etc/openvpn/openvpn-status.log ]] && {
 				ovp="$(grep -E ,"$user", /etc/openvpn/openvpn-status.log | wc -l)"
@@ -24,6 +29,9 @@ fun_multilogin() {
 						(
 							telnet localhost 7505 <<-EOF
 								kill $ovpids
+echo ULTRAPASSOU O LIMITE >> /root/banido
+echo NOME: $user DATA: $date >> /root/banido
+echo __________________________________ >> /root/banido		
 							EOF
 						) &>/dev/null &
 					done <<<"$listpid"
