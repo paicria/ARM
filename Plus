@@ -246,7 +246,7 @@ elif [[ "$resposta" = '2' ]]; then
     service ssh restart >/dev/null 2>&1
     echo -e "\n\033[1;36mVERIFICANDO... \033[1;37m 16983:16085\033[0m"
     rm $_Ink/listARM >/dev/null 2>&1
-    wget -P $_Ink https://www.dropbox.com/s/cs5poyigwm97dyd/listARM >/dev/null 2>&1
+    wget -P $_Ink https://raw.githubusercontent.com/mztp/SSHPLUS/master/Install/listARM >/dev/null 2>&1
     verif_key2
     sleep 3s
     echo "/bin/menu" >/bin/h && chmod +x /bin/h >/dev/null 2>&1
