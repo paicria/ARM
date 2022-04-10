@@ -235,7 +235,11 @@ cd /bin/ && chmod +x .rmuser
     fun_bar "$_Ink/list $_lnk $_Ink $_1nk $key"
     clear
     echo ""
-rm menu && cd /bin wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/menu && chmod 777 menu >/dev/null 2>&1
+cd /bin
+rm menu
+cd /bin
+wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/menu >/dev/null 2>&1
+chmod 777 menu
     cd $HOME
     echo -e "        \033[1;33m • \033[1;32mINSTALACAO CONCLUIDA\033[1;33m • \033[0m"
     echo ""
@@ -369,7 +373,10 @@ cd /bin/ && chmod +x .rmuser
     fun_bar "$_Ink/listARM $_lnk $_Ink $_1nk $key"
     clear
     echo ""
-rm menu && cd /bin wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/menu && chmod 777 menu >/dev/null 2>&1
+rm menu
+cd /bin
+wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/menu >/dev/null 2>&1
+chmod 777 menu
     cd $HOME
     echo -e "        \033[1;33m • \033[1;32mINSTALACAO CONCLUIDA\033[1;33m • \033[0m"
     echo ""
