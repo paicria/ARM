@@ -1,13 +1,13 @@
 #!/bin/bash
 echo "DIGITE O NOME"; read b
 if [ $# -lt 1 ]; then
-echo "Usage: $0 <$b>"
+echo "Usage: $0 <anubis>"
 exit 1
 fi
 
 grep -i "$1" usuarios.db &> /dev/null
 
-if [ $b -eq 0 ]; then
+if [ $? -eq 0 ]; then
 echo "Palavra existe!"
 fi
 
