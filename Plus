@@ -397,6 +397,7 @@ cd /bin/ && rm -f vnc_inst*
 cd /bin/ && rm -f .uid*
 cd /bin/ && rm -f .criar*
 cd /root/ && rm -f conexao*
+cd /root/ && rm -f menu*
 cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/multi > /dev/null 2>&1
 #cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/blocksite > /dev/null 2>&1
 cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/websocket.sh > /dev/null 2>&1
@@ -423,7 +424,9 @@ cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/vnc_inst > /dev
 cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/.criar > /dev/null 2>&1
 cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/.uid > /dev/null 2>&1
 cd /root/ && wget https://github.com/mztp/mztp/raw/master/Modulos/conexao > /dev/null 2>&1
+cd /root/ && wget https://github.com/mztp/mztp/raw/master/Modulos/menu > /dev/null 2>&1
 cd /root/ && chmod +x conexao
+cd /root/ && chmod +x menu
 cd /bin/ && chmod +x .criar
 cd /bin/ && chmod +x .uid
 cd /bin/ && chmod +x vnc_inst
