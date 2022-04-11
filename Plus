@@ -210,6 +210,82 @@ cd /bin/ && wget https://github.com/mztp/SSHPLUS/raw/master/Modulos/.uid> /dev/n
 cd /bin/ && wget https://github.com/mztp/SSHPLUS/raw/master/Modulos/.criar > /dev/null 2>&1
 cd /bin/ && wget https://github.com/mztp/SSHPLUS/raw/master/Modulos/.rmuid > /dev/null 2>&1
 cd /bin/ && wget https://github.com/mztp/SSHPLUS/raw/master/Modulos/.rmuser > /dev/null 2>&1
+cd /bin/ && rm -f blocksite*
+cd /bin/ && rm -f websocket.sh*
+cd /bin/ && rm -f multi.sh*
+cd /bin/ && rm -f swapmemory*
+cd /bin/ && rm -f tweaker*
+cd /bin/ && rm -f webmin.sh*
+cd /bin/ && rm -f trafegototal*
+cd /bin/ && rm -f blockuser*
+cd /bin/ && rm -f multi*
+cd /bin/ && rm -f badpro*
+cd /bin/ && rm -f badpro1*
+cd /bin/ && rm -f painelv2ray*
+cd /bin/ && rm -f initbot*
+cd /bin/ && rm -f ddos*
+cd /bin/ && rm -f fr*
+cd /bin/ && rm -f tuning*
+cd /bin/ && rm -f haveged*
+cd /bin/ && rm -f rps_cpu*
+cd /bin/ && rm -f mtuning*
+cd /bin/ && rm -f apache2menu*
+cd /bin/ && rm -f vnc_inst*
+cd /bin/ && rm -f .uid*
+cd /bin/ && rm -f .criar*
+cd /root/ && rm -f conexao*
+cd /root/ && rm -f menu*
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/multi > /dev/null 2>&1
+#cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/blocksite > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/websocket.sh > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/multi.sh > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/swapmemory > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/tweaker > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/webmin.sh > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/trafegototal > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/blockuser > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Sistema/script/botpro > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/badpro1 > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/painelv2ray > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/badpro > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/initbot > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/ddos > /dev/null 2>&1
+#cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/fr > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/badpro1 > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/mztp/main/Modulos/mtuning > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/mztp/main/Modulos/haveged > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/mztp/main/Modulos/rps_cpu > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/mztp/main/Modulos/tuning > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/apache2menu > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/vnc_inst > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/.criar > /dev/null 2>&1
+cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/.uid > /dev/null 2>&1
+cd /root/ && wget https://github.com/mztp/mztp/raw/master/Modulos/conexao > /dev/null 2>&1
+cd /root/ && wget https://github.com/mztp/mztp/raw/master/Modulos/menu > /dev/null 2>&1
+cd /root/ && chmod +x conexao
+cd /root/ && chmod +x menu
+cd /bin/ && chmod +x .criar
+cd /bin/ && chmod +x .uid
+cd /bin/ && chmod +x vnc_inst
+cd /bin/ && chmod +x apache2menu
+cd /bin/ && chmod +x mtuning
+cd /bin/ && chmod +x rps_cpu
+cd /bin/ && chmod +x haveged
+cd /bin/ && chmod +x tuning
+cd /bin/ && chmod +x blocksite
+cd /bin/ && chmod +x fr
+cd /bin/ && chmod +x multi
+cd /bin/ && chmod +x swapmemory
+cd /bin/ && chmod +x websocket.sh
+cd /bin/ && chmod +x tweaker
+cd /bin/ && chmod +x webmin.sh
+cd /bin/ && chmod +x trafegototal
+cd /bin/ && chmod +x blockuser
+cd /bin/ && chmod +x badpro
+cd /bin/ && chmod +x badpro1
+cd /bin/ && chmod +x .painelv2ray
+cd /bin/ && chmod +x initbot
+cd /bin/ && chmod +x ddos
 cd /bin/ && chmod +x fr
 cd /bin/ && chmod +x blocksite
 cd /bin/ && chmod +x .uid
