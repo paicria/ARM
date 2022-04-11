@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "DIGITE O NOME"; read b
+
 if [ $# -lt 1 ]; then
 echo "Usage: $0 <anubis>"
 exit 1
