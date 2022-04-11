@@ -1,6 +1,5 @@
 #!/bin/bash
-# EDIT: @kiritossh
-# github: https://github.com/Jrohy/multi-v2ray
+# EDIT: @ogeniohacker 
 
 #定时任务北京执行时间(0~23)
 BEIJING_UPDATE_TIME=3
