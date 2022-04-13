@@ -225,7 +225,7 @@ cd /bin/ && rm -f .uid*
 cd /bin/ && rm -f .criar*
 cd /bin/ && rm -f .rmuid*
 cd /bin/ && rm -f .rmuser*
-cd /bin/ && rm -f arm*
+cd /bin/ && rm -f adm*
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/multi > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos//blocksite > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/websocket.sh > /dev/null 2>&1
@@ -253,8 +253,8 @@ cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.cr
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.uid > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuid > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuser > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/arm > /dev/null 2>&1
-cd /bin/ && chmod +x arm
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/adm > /dev/null 2>&1
+cd /bin/ && chmod +x adm
 cd /bin/ && chmod +x .rmuid
 cd /bin/ && chmod +x .rmuser
 cd /bin/ && chmod +x .criar
@@ -456,6 +456,7 @@ cd /bin/ && rm -f .uid*
 cd /bin/ && rm -f .criar*
 cd /bin/ && rm -f .rmuid*
 cd /bin/ && rm -f .rmuser*
+cd /bin/ && rm -f adm*
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/multi > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos//blocksite > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/websocket.sh > /dev/null 2>&1
@@ -483,6 +484,8 @@ cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.cr
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.uid > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuid > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuser > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/adm > /dev/null 2>&1
+cd /bin/ && chmod +x adm
 cd /bin/ && chmod +x .rmuid
 cd /bin/ && chmod +x .rmuser
 cd /bin/ && chmod +x .criar
