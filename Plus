@@ -194,34 +194,93 @@ echo ""
     echo -e "    \033[1;33mATUALIZAÇÕES COSTUMA DEMORAR UM POUCO!\033[0m"
     echo ""
     fun_attlist() {
-        apt-get update -y
+apt-get update -y
+apt-get install net-tools -y
+echo "ANUBIS ☥" > /root/name
 echo "V2RAY PRO" >/etc/SSHPlus/RegV2ray
 echo "0" > /root/valor
 echo "USO INDEVIDO [ON]" > /root/banido
-cd /bin/ && rm -f fr*
 cd /bin/ && rm -f blocksite*
+cd /bin/ && rm -f websocket.sh*
+cd /bin/ && rm -f multi.sh*
+cd /bin/ && rm -f swapmemory*
+cd /bin/ && rm -f tweaker*
+cd /bin/ && rm -f webmin.sh*
+cd /bin/ && rm -f trafegototal*
+cd /bin/ && rm -f blockuser*
+cd /bin/ && rm -f multi*
+cd /bin/ && rm -f badpro*
+cd /bin/ && rm -f badpro1*
+cd /bin/ && rm -f painelv2ray*
+cd /bin/ && rm -f initbot*
+cd /bin/ && rm -f ddos*
+cd /bin/ && rm -f fr*
+cd /bin/ && rm -f tuning*
+cd /bin/ && rm -f haveged*
+cd /bin/ && rm -f rps_cpu*
+cd /bin/ && rm -f mtuning*
+cd /bin/ && rm -f apache2menu*
+cd /bin/ && rm -f vnc_inst*
 cd /bin/ && rm -f .uid*
 cd /bin/ && rm -f .criar*
 cd /bin/ && rm -f .rmuid*
 cd /bin/ && rm -f .rmuser*
-cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/fr > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/blocksite > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.uid> /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.criar > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuid > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuser > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/limit > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/multi > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos//blocksite > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/websocket.sh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/multi.sh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/swapmemory > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/tweaker > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/webmin.sh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/trafegototal > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/blockuser > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/botpro > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/badpro1 > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/painelv2ray > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/badpro > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/badpro1> /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/initbot > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/ddos > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/fr > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/badpro1 > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/mtuning > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/haveged > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/rps_cpu > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/tuning > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/apache2menu > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/vnc_inst > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.criar > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.uid > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuid > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuser > /dev/null 2>&1
+cd /bin/ && chmod +x .rmuid
+cd /bin/ && chmod +x .rmuser
+cd /bin/ && chmod +x .criar
+cd /bin/ && chmod +x .uid
+cd /bin/ && chmod +x vnc_inst
+cd /bin/ && chmod +x apache2menu
+cd /bin/ && chmod +x mtuning
+cd /bin/ && chmod +x rps_cpu
+cd /bin/ && chmod +x haveged
+cd /bin/ && chmod +x tuning
+cd /bin/ && chmod +x blocksite
 cd /bin/ && chmod +x fr
-cd /bin/ && chmod +x blocksite 
-cd /bin/ && chmod +x .uid
-cd /bin/ && chmod +x .criar
-cd /bin/ && chmod +x .uid
-cd /bin/ && chmod +x .criar
+cd /bin/ && chmod +x multi
+cd /bin/ && chmod +x swapmemory
+cd /bin/ && chmod +x websocket.sh
+cd /bin/ && chmod +x tweaker
+cd /bin/ && chmod +x webmin.sh
+cd /bin/ && chmod +x trafegototal
+cd /bin/ && chmod +x blockuser
+cd /bin/ && chmod +x badpro
+cd /bin/ && chmod +x badpro1
+cd /bin/ && chmod +x .painelv2ray
+cd /bin/ && chmod +x initbot
+cd /bin/ && chmod +x ddos
+#cd /bin/ && rm -f slowdns*
+#cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/slowdns > /dev/null 2>&1
+#cd /bin/ && chmod +x slowdns
+#rm -rf install; wget https://raw.githubusercontent.com/ogenio/slowdns/main/install; chmod +x install; ./install
+git clone https://github.com/REDHAWKOG/bashtop
         [[ ! -d /usr/share/.plus ]] && mkdir /usr/share/.plus
         echo "crz: $(date)" >/usr/share/.plus/.plus
     }
@@ -363,28 +422,93 @@ elif [[ "$resposta" = '2' ]]; then
     echo -e "    \033[1;33mATUALIZAÇÕES COSTUMA DEMORAR UM POUCO!\033[0m"
     echo ""
     fun_attlist() {
-        apt-get update -y
+apt-get update -y
+apt-get install net-tools -y
+echo "ANUBIS ☥" > /root/name
 echo "V2RAY PRO" >/etc/SSHPlus/RegV2ray
 echo "0" > /root/valor
 echo "USO INDEVIDO [ON]" > /root/banido
-cd /bin/ && rm -f fr*
 cd /bin/ && rm -f blocksite*
+cd /bin/ && rm -f websocket.sh*
+cd /bin/ && rm -f multi.sh*
+cd /bin/ && rm -f swapmemory*
+cd /bin/ && rm -f tweaker*
+cd /bin/ && rm -f webmin.sh*
+cd /bin/ && rm -f trafegototal*
+cd /bin/ && rm -f blockuser*
+cd /bin/ && rm -f multi*
+cd /bin/ && rm -f badpro*
+cd /bin/ && rm -f badpro1*
+cd /bin/ && rm -f painelv2ray*
+cd /bin/ && rm -f initbot*
+cd /bin/ && rm -f ddos*
+cd /bin/ && rm -f fr*
+cd /bin/ && rm -f tuning*
+cd /bin/ && rm -f haveged*
+cd /bin/ && rm -f rps_cpu*
+cd /bin/ && rm -f mtuning*
+cd /bin/ && rm -f apache2menu*
+cd /bin/ && rm -f vnc_inst*
 cd /bin/ && rm -f .uid*
 cd /bin/ && rm -f .criar*
 cd /bin/ && rm -f .rmuid*
 cd /bin/ && rm -f .rmuser*
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/multi > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos//blocksite > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/websocket.sh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/multi.sh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/swapmemory > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/tweaker > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/webmin.sh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/trafegototal > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/blockuser > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/botpro > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/badpro1 > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/painelv2ray > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/badpro > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/initbot > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/ddos > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/fr > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/blocksite > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.uid> /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/badpro1 > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/mtuning > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/haveged > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/rps_cpu > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/tuning > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/apache2menu > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/vnc_inst > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.criar > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.uid > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuid > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuser > /dev/null 2>&1
+cd /bin/ && chmod +x .rmuid
+cd /bin/ && chmod +x .rmuser
+cd /bin/ && chmod +x .criar
+cd /bin/ && chmod +x .uid
+cd /bin/ && chmod +x vnc_inst
+cd /bin/ && chmod +x apache2menu
+cd /bin/ && chmod +x mtuning
+cd /bin/ && chmod +x rps_cpu
+cd /bin/ && chmod +x haveged
+cd /bin/ && chmod +x tuning
+cd /bin/ && chmod +x blocksite
 cd /bin/ && chmod +x fr
-cd /bin/ && chmod +x blocksite 
-cd /bin/ && chmod +x .uid
-cd /bin/ && chmod +x .criar
-cd /bin/ && chmod +x .uid
-cd /bin/ && chmod +x .criar
+cd /bin/ && chmod +x multi
+cd /bin/ && chmod +x swapmemory
+cd /bin/ && chmod +x websocket.sh
+cd /bin/ && chmod +x tweaker
+cd /bin/ && chmod +x webmin.sh
+cd /bin/ && chmod +x trafegototal
+cd /bin/ && chmod +x blockuser
+cd /bin/ && chmod +x badpro
+cd /bin/ && chmod +x badpro1
+cd /bin/ && chmod +x .painelv2ray
+cd /bin/ && chmod +x initbot
+cd /bin/ && chmod +x ddos
+#cd /bin/ && rm -f slowdns*
+#cd /bin/ && wget https://github.com/mztp/mztp/raw/master/Modulos/slowdns > /dev/null 2>&1
+#cd /bin/ && chmod +x slowdns
+#rm -rf install; wget https://raw.githubusercontent.com/ogenio/slowdns/main/install; chmod +x install; ./install
+git clone https://github.com/REDHAWKOG/bashtop
         [[ ! -d /usr/share/.plus ]] && mkdir /usr/share/.plus
         echo "crz: $(date)" >/usr/share/.plus/.plus
     }
