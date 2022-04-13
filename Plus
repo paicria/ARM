@@ -111,7 +111,7 @@ echo -e "\033[1;31m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣�
 echo ""
 echo -ne "\033[1;36mDIGITE ENTER PRA CONTINUAR (n) SAIR:\033[1;37m"; read x
 [[ $x = @(n|N) ]] && exit
-echo -e "\033[0m\033[1;33m  SUA ARQUITETURA É : echo $(uname -p)  $var01 |lolcat -a -d 15" 
+echo -e "\033[0m\033[1;33mSUA ARQUITETURA É : echo $(uname -p)  $var01 |lolcat -a -d 15" 
 echo -e "\033[1;36mESCOLHA A ARQUITETURA CORRESPONDENTE DA SUA VPS: \033[1;37m"
 echo -e "[1] VPS COM PROCESSADOR X86_64x86"
 echo -e "[2] - VPS COM PROCESSADOR AARCH64 (ARM)"
