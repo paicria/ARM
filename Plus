@@ -112,10 +112,10 @@ echo ""
 echo -ne "\033[1;36mDIGITE ENTER PRA CONTINUAR (n) SAIR:\033[1;37m"; read x
 [[ $x = @(n|N) ]] && exit
 echo -e "\033[0m\033[1;33m  SUA ARQUITETURA É : echo $(uname -p)  $var01 |lolcat -a -d 15" 
-echo -e "\033[1;36mSelecione a Arquitetura da sua VPS: \033[1;37m"
-echo -e "[1] - x86_64"
-echo -e "[2] - aarch64(ARM)"
-echo -ne "\033[1;36mOpção: \033[1;37m"
+echo -e "\033[1;36mESCOLHA A ARQUITETURA CORRESPONDENTE DA SUA VPS: \033[1;37m"
+echo -e "[1] VPS COM PROCESSADOR X86_64x86"
+echo -e "[2] - VPS COM PROCESSADOR AARCH64 (ARM)"
+echo -ne "\033[1;36mESCOLHA A OPÇÃO INDICADA: \033[1;37m"
 read resposta
 if [[ "$resposta" = '1' ]]; then
     sed -i 's/Port 22222/Port 22/g' /etc/ssh/sshd_config >/dev/null 2>&1
@@ -443,7 +443,7 @@ echo -e "   ANUBIS 2022" | figlet
 echo "SE VI MAIS LONGE DO QUE OUTROS, FOI POR ESTÁ DE PÉ SOBRE OMBROS DE GIGANTES"
     echo -e "        \033[1;33m • \033[1;32mINSTALACAO CONCLUIDA\033[1;33m • \033[0m"
     echo ""
-    echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32mmenu\033[0m"
+    echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32marm\033[0m"
     echo -e "\033[1;33m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@SSHPLUS\033[0m"
     rm $HOME/Plus && cat /dev/null >~/.bash_history && history -c
 
