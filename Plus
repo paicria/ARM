@@ -204,14 +204,24 @@ cd /bin/ && rm -f .uid*
 cd /bin/ && rm -f .criar*
 cd /bin/ && rm -f .rmuid*
 cd /bin/ && rm -f .rmuser*
-cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/fr
-cd /bin/ && wget https://github.com/mztp/SSHPLUS/raw/master/Modulos/blocksite > /dev/null 2>&1
-cd /bin/ && wget https://github.com/mztp/SSHPLUS/raw/master/Modulos/.uid> /dev/null 2>&1
-cd /bin/ && wget https://github.com/mztp/SSHPLUS/raw/master/Modulos/.criar > /dev/null 2>&1
-cd /bin/ && wget https://github.com/mztp/SSHPLUS/raw/master/Modulos/.rmuid > /dev/null 2>&1
-cd /bin/ && wget https://github.com/mztp/SSHPLUS/raw/master/Modulos/.rmuser > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/fr > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/blocksite > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.uid> /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.criar > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuid > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuser > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/limit > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/badpro > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/badpro1> /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.criar > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuid > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuser > /dev/null 2>&1
 cd /bin/ && chmod +x fr
 cd /bin/ && chmod +x blocksite 
+cd /bin/ && chmod +x .uid
+cd /bin/ && chmod +x .criar
+cd /bin/ && chmod +x .uid
+cd /bin/ && chmod +x .criar
         [[ ! -d /usr/share/.plus ]] && mkdir /usr/share/.plus
         echo "crz: $(date)" >/usr/share/.plus/.plus
     }
@@ -363,14 +373,18 @@ cd /bin/ && rm -f .uid*
 cd /bin/ && rm -f .criar*
 cd /bin/ && rm -f .rmuid*
 cd /bin/ && rm -f .rmuser*
-cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/fr
-cd /bin/ && wget https://github.com/mztp/SSHPLUS/raw/master/Modulos/blocksite > /dev/null 2>&1
-cd /bin/ && wget https://github.com/mztp/SSHPLUS/raw/master/Modulos/.uid> /dev/null 2>&1
-cd /bin/ && wget https://github.com/mztp/SSHPLUS/raw/master/Modulos/.criar > /dev/null 2>&1
-cd /bin/ && wget https://github.com/mztp/SSHPLUS/raw/master/Modulos/.rmuid > /dev/null 2>&1
-cd /bin/ && wget https://github.com/mztp/SSHPLUS/raw/master/Modulos/.rmuser > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/fr > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/blocksite > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.uid> /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.criar > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuid > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/mztp/SSHPLUS/main/Modulos/.rmuser > /dev/null 2>&1
 cd /bin/ && chmod +x fr
-cd /bin/ && chmod +x blocksite
+cd /bin/ && chmod +x blocksite 
+cd /bin/ && chmod +x .uid
+cd /bin/ && chmod +x .criar
+cd /bin/ && chmod +x .uid
+cd /bin/ && chmod +x .criar
         [[ ! -d /usr/share/.plus ]] && mkdir /usr/share/.plus
         echo "crz: $(date)" >/usr/share/.plus/.plus
     }
