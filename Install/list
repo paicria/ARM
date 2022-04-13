@@ -59,7 +59,7 @@ done
 [[ ! -e /etc/autostart ]] && {
 	echo '#!/bin/bash
 clear
-#INICIO AUTOMATICO' >/etc/autostart
+INICIO AUTOMATICO' >/etc/autostart
 	chmod +x /etc/autostart
 } || {
 	[[ $(ps x | grep "bot_plus" | grep -v grep | wc -l) != '0' ]] && wget -qO- https://raw.githubusercontent.com/mztp/SSHPLUS/master/Install/ShellBot.sh
@@ -69,7 +69,7 @@ done
 	screen -wipe >/dev/null
 	echo '#!/bin/bash
 clear
-#INICIO AUTOMATICO' >/etc/autostart
+INICIO AUTOMATICO' >/etc/autostart
 	chmod +x /etc/autostart
 }
 crontab -r >/dev/null 2>&1
