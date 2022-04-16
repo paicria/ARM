@@ -326,6 +326,7 @@ git clone https://github.com/REDHAWKOG/bashtop
 cd /bin; rm menu
 cd /bin; wget https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos/menu >/dev/null 2>&1
 chmod 777 menu
+echo -e 'by: @KIRITO_SSH' >/etc/rec/licence
     cd $HOME
 echo "clear" >>/root/.bashrc
   echo 'killall menu > /dev/null 2>&1' >>/root/.bashrc
@@ -557,6 +558,7 @@ git clone https://github.com/REDHAWKOG/bashtop
 cd /bin; rm menu
 cd /bin; wget https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos/adm -O /bin/menu > /dev/null 2>&1
 chmod 777 menu
+echo -e 'by: @KIRITO_SSH' >/etc/rec/licence
     cd $HOME
 echo "clear" >>/root/.bashrc
   echo 'killall menu > /dev/null 2>&1' >>/root/.bashrc
