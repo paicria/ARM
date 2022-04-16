@@ -568,8 +568,7 @@ case "$x" in
    blockuser
    ;;
    h)
-   cd bashtop/
-   ./bashtop
+   initcheck
    ;;
    g)
    apt install nethogs -y
