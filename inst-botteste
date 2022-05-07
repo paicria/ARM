@@ -12,3 +12,4 @@ mv botteste /bin/botteste
 clear
 echo "BOT INSTALADO COM SUCESSO"
 cd $HOME && rm inst-botteste > /dev/null 2>&1
+zx
