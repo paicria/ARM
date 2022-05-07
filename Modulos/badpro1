@@ -8,7 +8,7 @@ clear
 figlet 'BADVPN PRO' | boxes -d stone -p a0v0 | lolcat
 echo -e "\E[44;1;37m            GERENCIAR BADVPN-UDP (PRO)            \E[0m"
     echo ""
-    echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;37m• \033[1;33mINSTALAR BADVPN(7300 PADRÃO) $var_sks1 \033[0m"
+    echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;37m• \033[1;33mINSTALAR BADVPN ARM(7300 PADRÃO) $var_sks1 \033[0m"
     echo -e "\033[1;31m[\033[1;36m02\033[1;31m] \033[1;37m• \033[1;33mINSTALAR BADVPN ARM(7300 PADRÃO) $var_sks1 \033[0m"
     echo -e "\033[1;31m[\033[1;36m03\033[1;31m] \033[1;37m• \033[1;33mATIVAR BADVPN(7296) $var_sks1 \033[0m"
     echo -e "\033[1;31m[\033[1;36m04\033[1;31m] \033[1;37m• \033[1;33mATIVAR BADVPN(7297) $var_sks1 \033[0m"
@@ -29,14 +29,11 @@ case "$x" in
 
 
     1)
-      badpro
+      badvpn
 echo "================================================"
 ;;
     2)
-install dos2unix -y /dev/null
-wget https://raw.githubusercontent.com/ogenio/crashvarm/main/Modulos/badvpn.sh /dev/null
-chmod 777 badvpn.sh
-./badvpn.sh
+badvpn
 echo "================================================"
 ;;
    3)
@@ -120,7 +117,7 @@ sleep 4
 echo "================================================"
  ;;
      11)
-        badvpn
+        badpro
 echo "================================================"
 ;;
       0)
