@@ -332,7 +332,7 @@ cd /bin; rm infousers
 cd /bin; wget https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos/infousers > /dev/null 2>&1
 chmod 777 infousers
 cd /bin; rm conexao
-cd /bin; whet https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos/conexao > /dev/null 2>&1
+cd /bin; wget https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos/conexao > /dev/null 2>&1
 chmod 777 conexao
 echo -e 'by: @KIRITO_SSH' >/etc/rec/licence
     cd $HOME
