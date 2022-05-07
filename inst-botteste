@@ -1,0 +1,14 @@
+#!/bin/bash
+clear
+echo -e "\E[44;1;37m     INSTALACAO BOT SSH TESTE     \E[0m"
+echo -e "\nINSTALANDO AGUARDE...."
+apt update -y > /dev/null 2>&1 && apt install unzip at jq curl -y > /dev/null 2>&1
+mkdir $HOME/BOT
+cd $HOME/BOT && wget https://raw.githubusercontent.com/paicria/BOT-TESTE/main/botteste
+cd $HOME/BOT && wget https://raw.githubusercontent.com/paicria/BOT-TESTE/main/botssh
+cd $HOME/BOT && wget https://raw.githubusercontent.com/paicria/BOT-TESTE/main/ShellBot.sh
+chmod +x $(ls)
+mv botteste /bin/botteste
+clear
+echo "BOT INSTALADO COM SUCESSO"
+cd $HOME && rm inst-botteste > /dev/null 2>&1
