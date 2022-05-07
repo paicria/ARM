@@ -1,5 +1,5 @@
 #!/bin/bash
-
+clear
 figlet   '  BOT TESTE' | boxes -d stone -p a0v0 | lolcat
 echo -e "\E[44;1;37m            GERENCIAR BOT TESTE          \E[0m"
     echo ""
