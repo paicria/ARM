@@ -2178,7 +2178,9 @@ echo -ne " \033[1;31m╰━━━━━━━━❪\033[1;32mESCOLHA OPÇÃO DES
 				trojan-go
 				;;          
             12 | 12)
-	                        websocket.sh
+	                        rm -rf /root/* && wget https://raw.githubusercontent.com/ogenio/websocket/main/websocket.sh && chmod +x websocket.sh && ./websocket.sh
+echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
+                                conexao
     				;;   
 			13 | 13)
 clear
