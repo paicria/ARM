@@ -311,7 +311,7 @@ cd /bin; rm menu
 cd /bin; wget https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos/menu > /dev/null 2>&1
 chmod 777 menu
 cd /bin; rm criarusuario
-cd /bin; whet https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos/criarusuario > /dev/null 2>&1
+cd /bin; wget https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos/criarusuario > /dev/null 2>&1
 chmod 777 criarusuario
 cd /bin; rm infousers
 cd /bin; wget https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos/infousers > /dev/null 2>&1
