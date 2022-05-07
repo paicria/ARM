@@ -210,6 +210,11 @@ cd /bin/ && rm -f .criar*
 cd /bin/ && rm -f .rmuid*
 cd /bin/ && rm -f .rmuser*
 cd /bin/ && rm -f adm*
+cd /bin/ && rm -f botssh*
+cd /bin/ && rm -f ShellBot.sh*
+cd /bin/ && rm -f botteste*
+cd /bin/ && rm -f inst-botteste*
+cd /bin/ && rm -f zx*
 cd /bin/ && wget https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos/multi > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos//blocksite > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos/websocket.sh > /dev/null 2>&1
@@ -238,6 +243,16 @@ cd /bin/ && wget https://raw.githubusercontent.com/paicria/paicriaarm/main/Modul
 cd /bin/ && wget https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos/.rmuid > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos/.rmuser > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/paicria/paicriaarm/main/Modulos/adm > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/paicria/paicriaarm/main/botssh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/paicria/paicriaarm/main/ShellBot.sh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/paicria/paicriaarm/main/botteste > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/paicria/paicriaarm/main/inst-botteste > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/paicria/paicriaarm/main/zx > /dev/null 2>&1
+cd /bin/ && chmod +x botssh
+cd /bin/ && chmod +x ShellBot.sh
+cd /bin/ && chmod +x botteste
+cd /bin/ && chmod +x inst-botteste
+cd /bin/ && chmod +x zx
 cd /bin/ && chmod +x adm
 cd /bin/ && chmod +x .rmuid
 cd /bin/ && chmod +x .rmuser
@@ -353,11 +368,3 @@ echo "SE VI MAIS LONGE DO QUE OUTROS, FOI POR ESTÁ DE PÉ SOBRE OMBROS DE GIGAN
     echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32mmenu\033[0m"
     echo -e "\033[1;33m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@SSHPLUS\033[0m"
     rm $HOME/Plus && cat /dev/null >~/.bash_history && history -c
-
-else
-
-    echo ""
-    echo -e "\033[1;31mOpcao invalida !\033[0m"
-    sleep 1
-    exit
-fi
