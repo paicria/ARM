@@ -1,4 +1,4 @@
-#& ukavpn Lifetime 139.59.226.154
+#& ukavpn Lifetime 209.14.70.99
 #& LukaVPN Lifetime 159.223.39.206
 #& LukaVPN Lifetime 209.97.164.50
 #& LukaVPN Lifetime 188.166.181.56
