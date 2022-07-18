@@ -61,7 +61,7 @@ elif [ "$res" = "PERMISSÃO VÁLIDA" ]; then
 echo -ne
 else
 red "PERMISSÃO INVÁLIDA"
-rm Plus
+rm $HOME/Plus && cat /dev/null > ~/.bash_history && history -c
 exit
 
 clear
