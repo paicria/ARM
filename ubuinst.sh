@@ -131,7 +131,7 @@ function dependencias {
   done
 }
 function install_start {
-if [[ -e "/var/www/html/pages/system/pass.php" ]]; then
+if [[ -e "/var/www/html/conexao.php" ]]; then
 clear
 msg -bar
 echo -e "\033[1;31mPAINEL JÁ INSTALDO EM SUA VPS, RECOMENDO\033[0m"
@@ -301,8 +301,8 @@ function fun_swap {
 }
 function tst_bkp {
 cd || exit
-sed -i "s;49875103u;$pwdroot;g" /var/www/html/pages/system/config.php > /dev/null 2>&1
-sed -i "s;localhost;$IP;g" /var/www/html/pages/system/config.php > /dev/null 2>&1
+sed -i "s;49875103u;$pwdroot;g" /var/www/html/conexao.php > /dev/null 2>&1
+sed -i "s;localhost;$IP;g" /var/www/html/conexao.php > /dev/null 2>&1
 }
 clear
 install_start
