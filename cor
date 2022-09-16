@@ -2,8 +2,6 @@
 
 echo "DIGITE A COR DESEJADA"; read cor
 
-echo "DIGITE A COR DESEJADA"; read cor
-
 sed -i "s;Lime;$cor;g" /var/www/html/app-assets/css/colors.css
 sed -i "s;Lime;$cor;g" /var/www/html/app-assets/css/colors.min.css
 sed -i "s;Lime;$cor;g" /var/www/html/app-assets/css/components.css
