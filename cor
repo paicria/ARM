@@ -1,0 +1,14 @@
+#!/bin/bash 
+
+echo "DIGITE A COR DESEJADA"; read cor
+
+sed -i "s;Lime;$cor;g" /var/www/html/app-assets/css/colors.css
+sed -i "s;Lime;$cor;g" /var/www/html/app-assets/css/colors.min.css
+sed -i "s;Lime;$cor;g" /var/www/html/app-assets/css/components.css
+sed -i "s;Lime;$cor;g" /var/www/html/app-assets/css/components.min.css
+sed -i "s;Lime;$cor;g" /var/www/html/app-assets/css/bootstrap.css
+sed -i "s;Lime;$cor;g" /var/www/html/app-assets/css/bootstrap.min.css
+sed -i "s;Lime;$cor;g" /var/www/html/app-assets/css/bootstrap-extended.css
+sed -i "s;Lime;$cor;g" /var/www/html/app-assets/css/bootstrap-extended.min.css
+sed -i "s;Lime;$cor;g" /var/www/html/app-assets/css/bordered-layout.css
+sed -i "s;Lime;$cor;g" /var/www/html/app-assets/css/bordered-layout.min.css
