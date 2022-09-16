@@ -15,3 +15,5 @@ sed -i "s;$atual;$cor;g" /var/www/html/app-assets/css/themes/bordered-layout.css
 sed -i "s;$atual;$cor;g" /var/www/html/app-assets/css/themes/bordered-layout.min.css
 
 echo "NOVA COR ADICIONADA COM SUCESSO!!" 
+sleep 4
+pweb
