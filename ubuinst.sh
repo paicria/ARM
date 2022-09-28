@@ -198,6 +198,54 @@ sleep 2
 verificar_chave
 fi
 }
+function verificar_chave {
+clear
+IP=$(wget -qO- ipv4.icanhazip.com)
+echo ""
+figlet -f slant GESTOR-SSH | boxes -d cat -pa2t0b0 | lolcat -a -d 2
+echo -e "\033[1;32m				                      By\033[1;36m NTECH SYSTEM\033[0m"
+echo ""
+print_center "\033[1;34m	INSTALANDO PAINEL	 \033[0m"
+echo ""
+read -p "DIGITE A CHAVE DE INSTALAÇÃO: " key
+echo ""
+echo -e "\033[1;33m[*] CHECANDO A CHAVE DE INSTALAÇÃO!\033[0m"
+echo ""
+resultkey=$(curl -s -X POST "http://chave.imperialnet.xyz/validarchave.php" -d key=$key) &>/dev/null
+result=$(curl -s -X POST "http://chave.imperialnet.xyz/verificaChave.php" -d key=$key) &>/dev/null
+sleep 3
+if [ $(echo $resultkey | jq -r '.validate') == "Success" ] > /dev/null 2>&1
+then
+sleep 1
+echo ""
+echo -e "\033[1;31m[-] ESSA CHAVE JÁ ESTA EM USO!\033[0m"
+echo ""
+echo -e "\033[1;32m[*] ADQUIRE UMA NOVA CHAVE NO BOT: \033[1;33m@gestorkeybot\033[0m"
+echo ""
+cat /dev/null > ~/.bash_history && history -c
+rm install* > /dev/null 2>&1
+exit;
+fi
+if [ $(echo $result | jq -r '.validate') == "Success" ]
+then
+echo ""
+echo -e "\033[1;32m[*] CHAVE ACEITA!\033[0m"
+echo ""
+echo $key > /bin/info-chave
+curl -s -X POST "http://chave.imperialnet.xyz/deletaip.php" -d IP=$IP
+sleep 2
+curl -s -X POST "http://chave.imperialnet.xyz/criarconect.php" -d key=$key -d IP=$IP
+install_continue
+else
+sleep 1
+echo ""
+echo -e "\033[1;31m[-] ESSA CHAVE NÃO FOI ACEITA!\033[0m"
+echo ""
+cat /dev/null > ~/.bash_history && history -c
+rm install* > /dev/null 2>&1
+exit;
+fi
+}
 function install_continue {
 msg -bar
 echo -e "	   \e[5m\033[1;100m	  CONCLUINDO PACOTES PARA O SCRIPT	 \033[0m"
@@ -384,6 +432,7 @@ echo '/bin/ram.img none swap sw 0 0' | tee -a /etc/fstab > /dev/null 2>&1
 sleep 2
 finalizar
 }
+function finalizar {
 clear
 sed -i "s;1020;$pwdroot;g" /var/www/html/pages/system/pass.php > /dev/null 2>&1
 sed -i "s;1020;$pwdroot;g" /var/www/html/config/config.php > /dev/null 2>&1
@@ -423,3 +472,21 @@ rm install* > /dev/null 2>&1
 rm -rf wget-log* > /dev/null 2>&1
 clear
 exit;
+}
+rm install* > /dev/null 2>&1
+os_system
+TIME_START="$(date +%s)"
+[[ "$(whoami)" != "root" ]] && {
+sleep 1s
+echo -e "\033[1;33m[\033[1;31mERRO\033[1;33m] \033[1;37m- \033[1;33mVOCÊ PRECISA EXECUTAR COMO ROOT\033[0m"
+cat /dev/null > ~/.bash_history && history -c
+rm -rf wget-log* > /dev/null 2>&1
+rm install* > /dev/null 2>&1; exit 0
+}
+[[ "$vercion" != "18.04" ]] && {
+sleep 1s
+echo -e "\n\033[1;31mSISTEMA NÃO COMPATIVEL! FAVOR\nINSTALAR O UBUNTU 18.04!\033[0m"
+cat /dev/null > ~/.bash_history && history -c
+rm -rf wget-log* > /dev/null 2>&1
+rm install* > /dev/null 2>&1; exit 0
+}
