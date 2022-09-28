@@ -473,20 +473,3 @@ rm -rf wget-log* > /dev/null 2>&1
 clear
 exit;
 }
-rm install* > /dev/null 2>&1
-os_system
-TIME_START="$(date +%s)"
-[[ "$(whoami)" != "root" ]] && {
-sleep 1s
-echo -e "\033[1;33m[\033[1;31mERRO\033[1;33m] \033[1;37m- \033[1;33mVOCÊ PRECISA EXECUTAR COMO ROOT\033[0m"
-cat /dev/null > ~/.bash_history && history -c
-rm -rf wget-log* > /dev/null 2>&1
-rm install* > /dev/null 2>&1; exit 0
-}
-[[ "$vercion" != "18.04" ]] && {
-sleep 1s
-echo -e "\n\033[1;31mSISTEMA NÃO COMPATIVEL! FAVOR\nINSTALAR O UBUNTU 18.04!\033[0m"
-cat /dev/null > ~/.bash_history && history -c
-rm -rf wget-log* > /dev/null 2>&1
-rm install* > /dev/null 2>&1; exit 0
-}
